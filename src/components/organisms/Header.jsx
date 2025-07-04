@@ -4,19 +4,21 @@ import ApperIcon from '@/components/ApperIcon';
 import SearchBar from '@/components/molecules/SearchBar';
 
 const Header = ({ onMenuClick }) => {
-  const [notifications] = useState([
-    { id: 1, type: 'payment', message: 'Payment from ABC Corp received', time: '2m ago' },
-    { id: 2, type: 'task', message: 'Follow up with new lead', time: '1h ago' },
-    { id: 3, type: 'invoice', message: 'Invoice #001 is overdue', time: '3h ago' }
+const [notifications] = useState([
+    { id: 1, type: 'kyc', message: 'KYC submitted by TechCorp Startup', time: '2m ago' },
+    { id: 2, type: 'payment', message: 'Onboarding fee paid by EcoVentures', time: '1h ago' },
+    { id: 3, type: 'compliance', message: 'Compliance check required for GreenTech', time: '3h ago' },
+    { id: 4, type: 'registration', message: 'New startup registration received', time: '5h ago' }
   ]);
 
   const [showNotifications, setShowNotifications] = useState(false);
 
-  const getNotificationIcon = (type) => {
+const getNotificationIcon = (type) => {
     switch (type) {
-      case 'payment': return 'DollarSign';
-      case 'task': return 'CheckSquare';
-      case 'invoice': return 'FileText';
+      case 'kyc': return 'Shield';
+      case 'payment': return 'CreditCard';
+      case 'compliance': return 'CheckCircle';
+      case 'registration': return 'Building';
       default: return 'Bell';
     }
   };
@@ -92,9 +94,9 @@ const Header = ({ onMenuClick }) => {
             <div className="bg-gradient-to-r from-primary to-secondary rounded-full p-2">
               <ApperIcon name="User" className="h-6 w-6 text-white" />
             </div>
-            <div className="ml-3 hidden md:block">
-              <p className="text-sm font-medium text-gray-900">Business Owner</p>
-              <p className="text-xs text-gray-600">Administrator</p>
+<div className="ml-3 hidden md:block">
+              <p className="text-sm font-medium text-gray-900">Startup OS Admin</p>
+              <p className="text-xs text-gray-600">Saksham Odisha</p>
             </div>
           </div>
         </div>

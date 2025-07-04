@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#2563EB',
-        secondary: '#1E40AF',
+colors: {
+        primary: '#667eea',
+        secondary: '#764ba2',
         accent: '#10B981',
         success: '#22C55E',
         warning: '#F59E0B',
@@ -16,10 +16,15 @@ export default {
         info: '#3B82F6',
         surface: '#F8FAFC',
         'bg-subtle': '#F1F5F9',
+        'startup-blue': '#4F46E5',
+        'startup-green': '#10B981',
+        'odisha-gold': '#F59E0B',
+        'odisha-red': '#DC2626',
       },
-      fontFamily: {
-        display: ['Plus Jakarta Sans', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+fontFamily: {
+        display: ['Plus Jakarta Sans', 'Noto Sans Oriya', 'sans-serif'],
+        body: ['Inter', 'Noto Sans Oriya', 'sans-serif'],
+        odia: ['Noto Sans Oriya', 'Mukti', 'sans-serif'],
       },
       boxShadow: {
         'card': '0 4px 8px rgba(0,0,0,0.1)',

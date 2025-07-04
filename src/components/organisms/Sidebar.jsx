@@ -5,14 +5,15 @@ import ApperIcon from '@/components/ApperIcon';
 const Sidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
 
-  const navItems = [
+const navItems = [
     { path: '/', label: 'Dashboard', icon: 'BarChart3' },
-    { path: '/finance', label: 'Finance', icon: 'DollarSign' },
-    { path: '/sales', label: 'Sales', icon: 'TrendingUp' },
-    { path: '/procurement', label: 'Procurement', icon: 'Package' },
-    { path: '/credit', label: 'Credit', icon: 'CreditCard' },
-    { path: '/knowledge', label: 'Knowledge', icon: 'BookOpen' },
-    { path: '/tasks', label: 'Tasks', icon: 'CheckSquare' }
+    { path: '/onboarding', label: 'Onboarding', icon: 'UserPlus' },
+    { path: '/kyc-center', label: 'KYC Center', icon: 'Shield' },
+    { path: '/payment-portal', label: 'Payment Portal', icon: 'CreditCard' },
+    { path: '/compliance-hub', label: 'Compliance Hub', icon: 'CheckCircle' },
+    { path: '/startup-profile', label: 'Startup Profile', icon: 'Building' },
+    { path: '/resources', label: 'Resources', icon: 'BookOpen' },
+    { path: '/support', label: 'Support', icon: 'HelpCircle' }
   ];
 
   const NavItem = ({ item }) => (
@@ -37,13 +38,13 @@ const Sidebar = ({ isOpen, onClose }) => {
       {/* Desktop Sidebar */}
       <div className="hidden lg:block w-64 bg-white shadow-lg h-full">
         <div className="p-6">
-          <div className="flex items-center mb-8">
-            <div className="bg-gradient-to-r from-primary to-secondary rounded-lg p-2">
-              <ApperIcon name="Zap" className="h-6 w-6 text-white" />
+<div className="flex items-center mb-8">
+            <div className="bg-gradient-to-r from-startup-blue to-startup-green rounded-lg p-2">
+              <ApperIcon name="Rocket" className="h-6 w-6 text-white" />
             </div>
             <div className="ml-3">
-              <h1 className="text-xl font-bold text-gray-900">BizFlow Pro</h1>
-              <p className="text-sm text-gray-600">Business Dashboard</p>
+              <h1 className="text-xl font-bold text-gray-900">Startup OS</h1>
+              <p className="text-sm text-gray-600">Saksham Odisha</p>
             </div>
           </div>
           
@@ -67,14 +68,14 @@ const Sidebar = ({ isOpen, onClose }) => {
             className="relative w-64 bg-white shadow-lg h-full"
           >
             <div className="p-6">
-              <div className="flex items-center justify-between mb-8">
+<div className="flex items-center justify-between mb-8">
                 <div className="flex items-center">
-                  <div className="bg-gradient-to-r from-primary to-secondary rounded-lg p-2">
-                    <ApperIcon name="Zap" className="h-6 w-6 text-white" />
+                  <div className="bg-gradient-to-r from-startup-blue to-startup-green rounded-lg p-2">
+                    <ApperIcon name="Rocket" className="h-6 w-6 text-white" />
                   </div>
                   <div className="ml-3">
-                    <h1 className="text-xl font-bold text-gray-900">BizFlow Pro</h1>
-                    <p className="text-sm text-gray-600">Business Dashboard</p>
+                    <h1 className="text-xl font-bold text-gray-900">Startup OS</h1>
+                    <p className="text-sm text-gray-600">Saksham Odisha</p>
                   </div>
                 </div>
                 <button
