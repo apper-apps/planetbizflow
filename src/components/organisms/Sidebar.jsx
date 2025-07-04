@@ -6,7 +6,8 @@ const Sidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
 
 const dashboardItems = [
-    { path: '/', label: 'Dashboard', icon: 'BarChart3' },
+    { path: '/', label: 'Home', icon: 'Home' },
+    { path: '/dashboard', label: 'Dashboard', icon: 'BarChart3' },
     { path: '/onboarding', label: 'Onboarding', icon: 'UserPlus' },
     { path: '/kyc-center', label: 'KYC Center', icon: 'Shield' },
     { path: '/payment-portal', label: 'Payment Portal', icon: 'CreditCard' },

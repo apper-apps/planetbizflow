@@ -65,6 +65,35 @@ const getNotificationIcon = (type) => {
                     </Link>
                   </motion.div>
                 )}
+</div>
+              <Link to="/" className="text-gray-700 hover:text-primary transition-colors">
+                Home
+              </Link>
+              <div className="relative">
+                <button
+                  onClick={() => setShowServicesDropdown(!showServicesDropdown)}
+                  className="flex items-center text-gray-700 hover:text-primary transition-colors"
+                >
+                  Startup Types
+                  <ApperIcon name="ChevronDown" className="h-4 w-4 ml-1" />
+                </button>
+                {showServicesDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 z-50"
+                  >
+                    <Link to="/fmcg-manufacturing" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-lg">
+                      FMCG Manufacturing
+                    </Link>
+                    <Link to="/micro-distributor" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+                      Micro Distributor
+                    </Link>
+                    <Link to="/digital-entrepreneurs" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-lg">
+                      Digital Entrepreneurs
+                    </Link>
+                  </motion.div>
+                )}
               </div>
               <Link to="/projects" className="text-gray-700 hover:text-primary transition-colors">
                 Projects

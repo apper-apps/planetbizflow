@@ -1,7 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Layout from '@/components/organisms/Layout';
+import Home from '@/components/pages/Home';
 import Dashboard from '@/components/pages/Dashboard';
+import FMCGManufacturing from '@/components/pages/FMCGManufacturing';
+import MicroDistributor from '@/components/pages/MicroDistributor';
+import DigitalEntrepreneurs from '@/components/pages/DigitalEntrepreneurs';
 import Onboarding from '@/components/pages/Onboarding';
 import KYCCenter from '@/components/pages/KYCCenter';
 import PaymentPortal from '@/components/pages/PaymentPortal';
@@ -20,8 +24,12 @@ function App() {
   return (
     <div className="min-h-screen bg-bg-subtle">
 <Routes>
-<Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="fmcg-manufacturing" element={<FMCGManufacturing />} />
+          <Route path="micro-distributor" element={<MicroDistributor />} />
+          <Route path="digital-entrepreneurs" element={<DigitalEntrepreneurs />} />
           <Route path="onboarding" element={<Onboarding />} />
           <Route path="kyc-center" element={<KYCCenter />} />
           <Route path="payment-portal" element={<PaymentPortal />} />
