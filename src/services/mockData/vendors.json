@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "name": "TechSupply Co",
+    "category": "Technology",
+    "contact": "Alex Johnson",
+    "email": "alex@techsupply.com",
+    "phone": "+1-555-1234",
+    "rating": 4.5,
+    "lastOrder": "2024-01-15",
+    "totalSpent": 15000
+  },
+  {
+    "Id": 2,
+    "name": "Office Essentials",
+    "category": "Office Supplies",
+    "contact": "Maria Garcia",
+    "email": "maria@officeessentials.com",
+    "phone": "+1-555-5678",
+    "rating": 4.2,
+    "lastOrder": "2024-01-16",
+    "totalSpent": 8500
+  },
+  {
+    "Id": 3,
+    "name": "Marketing Solutions",
+    "category": "Marketing",
+    "contact": "David Lee",
+    "email": "david@marketingsolutions.com",
+    "phone": "+1-555-9012",
+    "rating": 4.8,
+    "lastOrder": "2024-01-17",
+    "totalSpent": 22000
+  },
+  {
+    "Id": 4,
+    "name": "Logistics Pro",
+    "category": "Shipping",
+    "contact": "Jennifer Wilson",
+    "email": "jennifer@logisticspro.com",
+    "phone": "+1-555-3456",
+    "rating": 4.1,
+    "lastOrder": "2024-01-18",
+    "totalSpent": 12000
+  },
+  {
+    "Id": 5,
+    "name": "Finance Services",
+    "category": "Financial",
+    "contact": "Michael Brown",
+    "email": "michael@financeservices.com",
+    "phone": "+1-555-7890",
+    "rating": 4.6,
+    "lastOrder": "2024-01-19",
+    "totalSpent": 35000
+  },
+  {
+    "Id": 6,
+    "name": "Legal Advisors",
+    "category": "Legal",
+    "contact": "Sarah Davis",
+    "email": "sarah@legaladvisors.com",
+    "phone": "+1-555-2345",
+    "rating": 4.9,
+    "lastOrder": "2024-01-20",
+    "totalSpent": 18000
+  }
+]

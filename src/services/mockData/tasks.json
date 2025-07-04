@@ -1,0 +1,56 @@
+[
+  {
+    "Id": 1,
+    "title": "Follow up with Tech Solutions Inc",
+    "description": "Send proposal for enterprise software license",
+    "priority": "high",
+    "dueDate": "2024-01-25",
+    "category": "Sales",
+    "status": "todo"
+  },
+  {
+    "Id": 2,
+    "title": "Review marketing campaign results",
+    "description": "Analyze Q1 marketing campaign performance",
+    "priority": "medium",
+    "dueDate": "2024-01-30",
+    "category": "Marketing",
+    "status": "inProgress"
+  },
+  {
+    "Id": 3,
+    "title": "Update inventory management system",
+    "description": "Implement new features for inventory tracking",
+    "priority": "low",
+    "dueDate": "2024-02-05",
+    "category": "Development",
+    "status": "todo"
+  },
+  {
+    "Id": 4,
+    "title": "Prepare quarterly financial report",
+    "description": "Compile financial data for Q1 2024",
+    "priority": "high",
+    "dueDate": "2024-01-28",
+    "category": "Finance",
+    "status": "completed"
+  },
+  {
+    "Id": 5,
+    "title": "Onboard new team member",
+    "description": "Setup accounts and training for new developer",
+    "priority": "medium",
+    "dueDate": "2024-02-01",
+    "category": "HR",
+    "status": "inProgress"
+  },
+  {
+    "Id": 6,
+    "title": "Review vendor contracts",
+    "description": "Annual review of all vendor agreements",
+    "priority": "low",
+    "dueDate": "2024-02-10",
+    "category": "Legal",
+    "status": "todo"
+  }
+]

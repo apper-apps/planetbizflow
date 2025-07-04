@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "name": "John Smith",
+    "company": "Tech Solutions Inc",
+    "email": "john@techsolutions.com",
+    "phone": "+1-555-0123",
+    "status": "qualified",
+    "value": 15000,
+    "notes": "Interested in enterprise package",
+    "lastContact": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "name": "Sarah Johnson",
+    "company": "Marketing Pro",
+    "email": "sarah@marketingpro.com",
+    "phone": "+1-555-0456",
+    "status": "new",
+    "value": 8500,
+    "notes": "Needs proposal for digital marketing services",
+    "lastContact": "2024-01-16"
+  },
+  {
+    "Id": 3,
+    "name": "Mike Chen",
+    "company": "Retail Plus",
+    "email": "mike@retailplus.com",
+    "phone": "+1-555-0789",
+    "status": "contacted",
+    "value": 12000,
+    "notes": "Follow up on inventory management solution",
+    "lastContact": "2024-01-17"
+  },
+  {
+    "Id": 4,
+    "name": "Lisa Wang",
+    "company": "Finance Corp",
+    "email": "lisa@financecorp.com",
+    "phone": "+1-555-0321",
+    "status": "proposal",
+    "value": 25000,
+    "notes": "Sent proposal, awaiting response",
+    "lastContact": "2024-01-18"
+  },
+  {
+    "Id": 5,
+    "name": "Robert Davis",
+    "company": "Health Systems",
+    "email": "robert@healthsystems.com",
+    "phone": "+1-555-0654",
+    "status": "won",
+    "value": 18000,
+    "notes": "Contract signed, implementation starting",
+    "lastContact": "2024-01-19"
+  },
+  {
+    "Id": 6,
+    "name": "Emma Brown",
+    "company": "Education Hub",
+    "email": "emma@educationhub.com",
+    "phone": "+1-555-0987",
+    "status": "lost",
+    "value": 9500,
+    "notes": "Chose competitor, budget constraints",
+    "lastContact": "2024-01-20"
+  }
+]

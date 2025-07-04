@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "customer": "Tech Solutions Inc",
+    "amount": 15000,
+    "dueDate": "2024-02-15",
+    "status": "sent",
+    "items": [
+      { "description": "Enterprise Software License", "quantity": 1, "price": 15000 }
+    ],
+    "terms": 30
+  },
+  {
+    "Id": 2,
+    "customer": "Marketing Pro",
+    "amount": 8500,
+    "dueDate": "2024-02-01",
+    "status": "overdue",
+    "items": [
+      { "description": "Digital Marketing Campaign", "quantity": 1, "price": 8500 }
+    ],
+    "terms": 15
+  },
+  {
+    "Id": 3,
+    "customer": "Retail Plus",
+    "amount": 12000,
+    "dueDate": "2024-02-28",
+    "status": "draft",
+    "items": [
+      { "description": "Inventory Management System", "quantity": 1, "price": 12000 }
+    ],
+    "terms": 45
+  },
+  {
+    "Id": 4,
+    "customer": "Finance Corp",
+    "amount": 25000,
+    "dueDate": "2024-01-30",
+    "status": "paid",
+    "items": [
+      { "description": "Financial Consulting Services", "quantity": 1, "price": 25000 }
+    ],
+    "terms": 30
+  },
+  {
+    "Id": 5,
+    "customer": "Health Systems",
+    "amount": 18000,
+    "dueDate": "2024-02-20",
+    "status": "sent",
+    "items": [
+      { "description": "Healthcare Management Software", "quantity": 1, "price": 18000 }
+    ],
+    "terms": 30
+  },
+  {
+    "Id": 6,
+    "customer": "Education Hub",
+    "amount": 9500,
+    "dueDate": "2024-01-25",
+    "status": "overdue",
+    "items": [
+      { "description": "Educational Platform Development", "quantity": 1, "price": 9500 }
+    ],
+    "terms": 15
+  }
+]
