@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import ApperIcon from '@/components/ApperIcon';
 import SearchBar from '@/components/molecules/SearchBar';
 
@@ -12,6 +13,7 @@ const [notifications] = useState([
   ]);
 
   const [showNotifications, setShowNotifications] = useState(false);
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
 
 const getNotificationIcon = (type) => {
     switch (type) {
@@ -33,13 +35,58 @@ const getNotificationIcon = (type) => {
           >
             <ApperIcon name="Menu" className="h-6 w-6" />
           </button>
-          
-          <div className="hidden md:block">
-            <SearchBar 
-              onSearch={(term) => console.log('Search:', term)}
-              placeholder="Search across all modules..."
-              className="w-96"
-            />
+<div className="hidden lg:flex items-center space-x-8">
+            <nav className="flex items-center space-x-6">
+              <div className="relative">
+                <button
+                  onClick={() => setShowServicesDropdown(!showServicesDropdown)}
+                  className="flex items-center text-gray-700 hover:text-primary transition-colors"
+                >
+                  Services
+                  <ApperIcon name="ChevronDown" className="h-4 w-4 ml-1" />
+                </button>
+                {showServicesDropdown && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 z-50"
+                  >
+                    <Link to="/services" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-lg">
+                      All Services
+                    </Link>
+                    <Link to="/onboarding" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+                      Startup Onboarding
+                    </Link>
+                    <Link to="/kyc-center" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+                      KYC Services
+                    </Link>
+                    <Link to="/compliance-hub" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-lg">
+                      Compliance Management
+                    </Link>
+                  </motion.div>
+                )}
+              </div>
+              <Link to="/projects" className="text-gray-700 hover:text-primary transition-colors">
+                Projects
+              </Link>
+              <Link to="/pricing" className="text-gray-700 hover:text-primary transition-colors">
+                Pricing
+              </Link>
+              <Link to="/testimonials" className="text-gray-700 hover:text-primary transition-colors">
+                Testimonials
+              </Link>
+              <Link to="/faqs" className="text-gray-700 hover:text-primary transition-colors">
+                FAQs
+              </Link>
+            </nav>
+            
+            <div className="hidden md:block">
+              <SearchBar 
+                onSearch={(term) => console.log('Search:', term)}
+                placeholder="Search across all modules..."
+                className="w-80"
+              />
+            </div>
           </div>
         </div>
 

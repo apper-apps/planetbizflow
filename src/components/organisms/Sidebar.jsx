@@ -5,7 +5,7 @@ import ApperIcon from '@/components/ApperIcon';
 const Sidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
 
-const navItems = [
+const dashboardItems = [
     { path: '/', label: 'Dashboard', icon: 'BarChart3' },
     { path: '/onboarding', label: 'Onboarding', icon: 'UserPlus' },
     { path: '/kyc-center', label: 'KYC Center', icon: 'Shield' },
@@ -14,6 +14,14 @@ const navItems = [
     { path: '/startup-profile', label: 'Startup Profile', icon: 'Building' },
     { path: '/resources', label: 'Resources', icon: 'BookOpen' },
     { path: '/support', label: 'Support', icon: 'HelpCircle' }
+  ];
+
+  const websiteItems = [
+    { path: '/services', label: 'Services', icon: 'Briefcase' },
+    { path: '/projects', label: 'Projects', icon: 'FolderOpen' },
+    { path: '/pricing', label: 'Pricing', icon: 'DollarSign' },
+    { path: '/testimonials', label: 'Testimonials', icon: 'MessageCircle' },
+    { path: '/faqs', label: 'FAQs', icon: 'HelpCircle' }
   ];
 
   const NavItem = ({ item }) => (
@@ -48,10 +56,24 @@ const navItems = [
             </div>
           </div>
           
-          <nav className="space-y-2">
-            {navItems.map((item) => (
-              <NavItem key={item.path} item={item} />
-            ))}
+<nav className="space-y-6">
+            <div>
+              <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Dashboard</h3>
+              <div className="space-y-2">
+                {dashboardItems.map((item) => (
+                  <NavItem key={item.path} item={item} />
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Website</h3>
+              <div className="space-y-2">
+                {websiteItems.map((item) => (
+                  <NavItem key={item.path} item={item} />
+                ))}
+              </div>
+            </div>
           </nav>
         </div>
       </div>
@@ -86,10 +108,24 @@ const navItems = [
                 </button>
               </div>
               
-              <nav className="space-y-2">
-                {navItems.map((item) => (
-                  <NavItem key={item.path} item={item} />
-                ))}
+<nav className="space-y-6">
+                <div>
+                  <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Dashboard</h3>
+                  <div className="space-y-2">
+                    {dashboardItems.map((item) => (
+                      <NavItem key={item.path} item={item} />
+                    ))}
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Website</h3>
+                  <div className="space-y-2">
+                    {websiteItems.map((item) => (
+                      <NavItem key={item.path} item={item} />
+                    ))}
+                  </div>
+                </div>
               </nav>
             </div>
           </motion.div>
